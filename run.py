@@ -30,9 +30,11 @@ async def main():
             );"""
         )
     
-    input("Would you like to update the value data? (y/n): ")
+    result = input("Would you like to update the value data? (y/n): ")
     
-    if input == 'y':
+    
+    if result == 'y':
+        print("Updating value data...")
         value_scraper = ValueScraper(connection, config.CSV_PATH)
         await value_scraper.run()
     
