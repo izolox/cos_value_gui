@@ -81,7 +81,7 @@ class App:
                 creature = None
                 
                 for cr in self.creatures:
-                    if text.lower() in cr[1].lower():
+                    if cr[1].lower().startswith(text.lower()):
                         creature = cr
                         break
                     
