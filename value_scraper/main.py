@@ -33,7 +33,7 @@ async def export(connection, csv_path):
         print("Could not connect to the database")
         return
     
-    print(f"Successfully connected to the database {DB_NAME}:{DB_HOST}")
+    print(f"Successfully connected to the database...")
 
     if data:
         for creature in data:
