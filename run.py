@@ -16,11 +16,11 @@ async def main():
         database = config.DB_NAME
     )
     
-    # input("Would you like to update the value data? (y/n): ")
+    input("Would you like to update the value data? (y/n): ")
     
-    # if input == 'y':
-    #     value_scraper = ValueScraper(connection, config.CSV_PATH)
-    #     await value_scraper.run()
+    if input == 'y':
+        value_scraper = ValueScraper(connection, config.CSV_PATH)
+        await value_scraper.run()
     
     app = App(connection)
     
